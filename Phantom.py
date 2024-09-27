@@ -29,11 +29,16 @@ __scrname__    = 'BLACKBOx v%s' % (__version__)
 __payload_dir__ = "{0}/payload".format(os.path.dirname(os.path.realpath(__file__)))
 
 def __banner__():
-	print color.R+color.BOLD+""" _____ __    _____ _____ _____ _____ _____ __ __ 
-| __  |  |  |  _  |     |  |  | __  |     |  |  |
-| __ -|  |__|     |   --|    -| __ -|  |  |-   -|
-|_____|_____|__|__|_____|__|__|_____|_____|__|__|"""
-	print (color.W+color.BOLD+"                                                {"+color.R+__version__+"#Dev"+color.W+"}"+color.ENDC)
+    print(color.R + color.BOLD + """  
+  _____  _   _  _____  _    _  _____  _____  _____  _____  _____  
+ |  __ \| | | ||  __ \| |  | ||_   _||  __ \|  ___||  _  ||  __ \ 
+ | |__) | |_| || |__) | |  | |  | |  | |  \/| |__  | | | || |__) |
+ |  ___/|  _  ||  ___/| |  | |  | |  | | __ |  __| | | | ||  _  / 
+ | |    | | | || |    | |__| | _| |_ | |_\ \| |___ \ \_/ /| | \ \ 
+ |_|    |_| |_||_|     \____/  \___/  \____/\____/  \___/ |_|  \_\
+    """)
+    print(color.W + color.BOLD + " ")
+                                               {"+color.R+__version__+"#Dev"+color.W+"}"+color.ENDC)
 
 def __help__():
 	print (color.W+color.BOLD+"Usage   : "+color.W+sys.argv[0]+color.R+" {Module}"+color.W+" -h/--help"+color.ENDC)
